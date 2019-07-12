@@ -129,4 +129,24 @@ function auto_safeconvert() {
         }
         if (a\_to\_vh == false) {
             var encryptedUrl = Base64.encode(a\_to\_vi);
-            a\_to\_ve\[i\].href = "
+            a\_to\_ve\[i\].href = "https://linkwibu.site/lanjutkuen/?url=" + encryptedUrl;
+			a\_to\_ve\[i\].rel = "nofollow";
+            a\_to\_vb++;
+            a\_to\_vc += i + ":::" + a\_to\_ve\[i\].href + "n";
+        }
+    }
+    var a\_to\_vj = document.getElementById("anonyminized");
+    var a\_to\_vk = document.getElementById("found_links");
+    if (a\_to\_vj) {
+        a\_to\_vj.innerHTML += a\_to\_vb;
+    }
+    if (a\_to\_vk) {
+        a\_to\_vk.innerHTML += a\_to\_va;
+    }
+}
+function a\_to\_fa() {
+    var a\_to\_vf = new Array();
+    protected\_links = protected\_links.replace(" ", "");
+    a\_to\_vf = protected_links.split(",");
+    return a\_to\_vf;
+}
